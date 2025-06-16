@@ -21,7 +21,45 @@
           bindings = <&kp>, <&kp>;
       };
     };
+/ {
+  behaviors {
+    del_hold_shift_del: del_hold_shift_del {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <0>;
+      flavor = "hold-preferred"; // or "balanced" if you prefer
+      tapping-term-ms = <200>;
+      bindings = <&shift_del_macro>, <&kp DELETE>;
+    };
+  };
+};
+/ {
+  behaviors {
+    bspc_hold_ctrl_bspc: bspc_hold_ctrl_bspc {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <0>;
+      flavor = "hold-preferred"; // or "balanced" if you prefer
+      tapping-term-ms = <200>;
+      bindings = <&ctrl_bspc_macro>, <&kp BACKSPACE>;
+    };
+  };
+};
 
+/ {
+  macros {
+    shift_del_macro: shift_del_macro {
+      compatible = "zmk,behavior-macro";
+      bindings = <&kp LSFT &kp DELETE>;
+    };
+  };
+};
+/ {
+  macros {
+    ctrl_bspc_macro: ctrl_bspc_macro {
+      compatible = "zmk,behavior-macro";
+      bindings = <&kp LCTRL &kp BACKSPACE>;
+    };
+  };
+};
   keymap {
     compatible = "zmk,keymap";
 
@@ -30,9 +68,9 @@
       bindings = <
         &kp GRAVE &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                            &mo 3      &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS
         &kp EQUAL &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                             &kp INSERT &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
-        &kp TAB   &kp A     &kp S    &kp D    &kp F      &kp G  &kp LGUI        &kp LALT  &kp LCTRL  &kp RCTRL &kp RALT           &kp RGUI   &kp H  &kp J  &kp K     &kp L    &kp SEMI &kp SQT
-        &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp LSHFT  &kp RSHFT                               &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-        &mo 2     &kp HOME  &kp CAPS &kp LEFT &kp RIGHT                &kp DEL  &kp ENTER &kp ESC    &kp ESC   &kp SPACE &kp BSPC                   &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo 2
+        &kp TAB   &kp A     &kp S    &kp D    &kp F      &kp G  &kp LGUI        &kp LSHFT    &kp LCTRL  &kp RCTRL &kp RSHFT       &kp RGUI   &kp H  &kp J  &kp K     &kp L    &kp SEMI &kp SQT
+        &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                              &kp LALT  &kp RALT                               &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
+        &mo 2     &kp HOME  &kp CAPS &kp LEFT &kp RIGHT                &del_hold_shift_del  &kp ENTER &kp ESC    &kp ESC   &kp SPACE &bspc_hold_ctrl_bspc         &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo 2
       >;
     };
     keypad {
