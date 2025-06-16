@@ -20,9 +20,7 @@
           flavor = "tap-preferred";
           bindings = <&kp>, <&kp>;
       };
-    };
-/ {
-  behaviors {
+      
     del_hold_shift_del: del_hold_shift_del {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <0>;
@@ -30,10 +28,6 @@
       tapping-term-ms = <200>;
       bindings = <&shift_del_macro>, <&kp DELETE>;
     };
-  };
-};
-/ {
-  behaviors {
     bspc_hold_ctrl_bspc: bspc_hold_ctrl_bspc {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <0>;
@@ -50,10 +44,6 @@
       compatible = "zmk,behavior-macro";
       bindings = <&kp LSFT &kp DELETE>;
     };
-  };
-};
-/ {
-  macros {
     ctrl_bspc_macro: ctrl_bspc_macro {
       compatible = "zmk,behavior-macro";
       bindings = <&kp LCTRL &kp BACKSPACE>;
