@@ -36,9 +36,6 @@
       bindings = <&ctrl_bspc_macro>, <&kp BACKSPACE>;
     };
   };
-};
-
-/ {
   macros {
     shift_del_macro: shift_del_macro {
       compatible = "zmk,behavior-macro";
@@ -49,7 +46,7 @@
       bindings = <&kp LCTRL &kp BACKSPACE>;
     };
   };
-};
+
   keymap {
     compatible = "zmk,keymap";
 
