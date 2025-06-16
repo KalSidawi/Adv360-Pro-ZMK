@@ -10,7 +10,7 @@
    macros {
     shift_del_macro: shift_del_macro {
       compatible = "zmk,behavior-macro";
-      bindings = <&kp LSFT &kp DELETE>;
+      bindings = <&kp LSHFT &kp DELETE>;
     };
     ctrl_bspc_macro: ctrl_bspc_macro {
       compatible = "zmk,behavior-macro";
@@ -27,21 +27,6 @@
           flavor = "tap-preferred";
           bindings = <&none &none>; // required placeholder
       };
-      
-    del_hold_shift_del: del_hold_shift_del {
-      compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <0>;
-      flavor = "hold-preferred"; // or "balanced" if you prefer
-      tapping-term-ms = <200>;
-      bindings = <&kp LSHFT &kp DELETE>;
-    };
-    bspc_hold_ctrl_bspc: bspc_hold_ctrl_bspc {
-      compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <0>;
-      flavor = "hold-preferred"; // or "balanced" if you prefer
-      tapping-term-ms = <200>;
-      bindings = <&kp LCTRL &kp BACKSPACE>;
-    };
   };
  
 
