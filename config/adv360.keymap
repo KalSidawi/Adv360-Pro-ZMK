@@ -18,6 +18,13 @@
           flavor = "tap-preferred";
           bindings = <&none &none>; // required placeholder
       };
+      del_hold_shift_del: del_hold_shift_del {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <0>;
+      flavor = "tap-preferred"; // feel free to tweak to "balanced"
+      tapping-term-ms = <200>;
+      bindings = <&kp LS(DELETE) &kp DELETE>;
+  };
   };
  
 
