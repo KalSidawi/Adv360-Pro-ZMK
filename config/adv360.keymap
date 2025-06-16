@@ -7,16 +7,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
-   macros {
-    shift_del_macro: shift_del_macro {
-      compatible = "zmk,behavior-macro";
-      bindings = <&kp LSHFT &kp DELETE>;
-    };
-    ctrl_bspc_macro: ctrl_bspc_macro {
-      compatible = "zmk,behavior-macro";
-      bindings = <&kp LCTRL &kp BACKSPACE>;
-    };
-  };
+  
     behaviors {
           #include "version.dtsi"
 
