@@ -16,9 +16,7 @@
           label = "HOMEROW_MODS";
           #binding-cells = <2>;
           tapping-term-ms = <200>;
-          quick_tap_ms = <175>;
           flavor = "tap-preferred";
-          bindings = <&kp>, <&kp>;
       };
       
     del_hold_shift_del: del_hold_shift_del {
@@ -26,14 +24,14 @@
       #binding-cells = <0>;
       flavor = "hold-preferred"; // or "balanced" if you prefer
       tapping-term-ms = <200>;
-      bindings = <&shift_del_macro>, <&kp DELETE>;
+      bindings = <&shift_del_macro> <&kp DELETE>;
     };
     bspc_hold_ctrl_bspc: bspc_hold_ctrl_bspc {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <0>;
       flavor = "hold-preferred"; // or "balanced" if you prefer
       tapping-term-ms = <200>;
-      bindings = <&ctrl_bspc_macro>, <&kp BACKSPACE>;
+      bindings = <&ctrl_bspc_macro> <&kp BACKSPACE>;
     };
   };
   macros {
