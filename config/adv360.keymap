@@ -42,7 +42,7 @@
       #binding-cells = <0>;
       flavor = "hold-preferred"; // or "balanced" if you prefer
       tapping-term-ms = <200>;
-      bindings = <&ckp LCTRL &kp BACKSPACE>;
+      bindings = <&kp LCTRL &kp BACKSPACE>;
     };
   };
  
