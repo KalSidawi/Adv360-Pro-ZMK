@@ -1,0 +1,12 @@
+// Default Kinesis Advantage360 Pro Layer Colors
+// ---------------------------------------------
+// Layer 0 : Off (Black)        → Base Layer
+// Layer 1 : White
+// Layer 2 : Blue
+// Layer 3 : Green
+// Layer 4 : Red
+// Layer 5 : Cyan
+// Layer 6 : Pink
+// Layer 7 : Yellow
+// ---------------------------------------------
+// Layers 8–15 repeat colors on the right half only
