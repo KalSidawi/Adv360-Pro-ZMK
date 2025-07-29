@@ -10,7 +10,6 @@
    #define FN      2   // fn
    #define SYM     3   // symbol
    #define MOD     4   // mod (Bluetooth, bootloader, RGB, macros)
-#include "version.dtsi"
 #include "macros.dtsi"
 / {
         behaviors {
