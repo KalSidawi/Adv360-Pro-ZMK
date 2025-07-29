@@ -5,11 +5,12 @@
 #include <dt-bindings/zmk/stp.h>
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/pointing.h>
-   #define BASE   0   // default_layer
-   #define KEYPAD 1   //Keypad
-   #define FN      2   // fn
-   #define SYM     3   // symbol
-   #define MOD     4   // mod (Bluetooth, bootloader, RGB, macros)
+ #define BASE   0   // default_layer
+   #define FUSION 1   //Fusion 360
+   #define KEYPAD 2   //Keypad
+   #define FN     3   // fn
+   #define SYM    4   // symbol
+   #define MOD    5   // mod (Bluetooth, bootloader, RGB, macros)
 #include "macros.dtsi"
 / {
         behaviors {
