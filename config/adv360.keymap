@@ -174,4 +174,5 @@
       display-name = "Yellow";    
       status = "reserved";
     };
+  };
 };
