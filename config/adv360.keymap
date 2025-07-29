@@ -6,11 +6,11 @@
 #include <dt-bindings/zmk/rgb.h>
 
 #define BASE   0   // default_layer
-#define FUSION 1   //Fusion 360
-#define KEYPAD 2   //Keypad
-#define FN     3   // fn
-#define SYM    4   // symbol
-#define MOD    5   // mod (Bluetooth, bootloader, RGB, macros)
+#define FUSION 1   //Fusion 360     WHITE
+#define KEYPAD 2   //Keypad         BLUE
+#define FN     3   // fn            GREEN
+#define SYM    4   // symbol        RED
+#define MOD    5   // mod (Bluetooth, bootloader, RGB, macros)  CYAN
 
 #include "macros.dtsi"
 
@@ -177,22 +177,22 @@
         };
 
         extra1 {
-            display-name = "Red";
+            display-name = "Pink";
             status = "reserved";
         };
 
         extra2 {
-            display-name = "Purple";
+            display-name = "Yellow";
             status = "reserved";
         };
 
         extra3 {
-            display-name = "Cyan";
+            display-name = "White-Blue";
             status = "reserved";
         };
 
         extra4 {
-            display-name = "Yellow";
+            display-name = "White-Green";
             status = "reserved";
         };
     };
