@@ -6,12 +6,12 @@
 #include <dt-bindings/zmk/rgb.h>
 
 #define BASE   0   // default_layer
-#define FUSION 5   //Fusion 360     RED
-#define KiCAD  6   //KiCAD 9.0      CYAN
-#define VSC    4   //Visual Studio Code WHITE
-#define KP     3   //Keypad         BLUE
 #define FN     1   // fn            GREEN
 #define SYM    2   // symbol        CYAN
+#define KP     3   //Keypad         BLUE
+#define VSC    4   //Visual Studio Code WHITE
+#define FUSION 5   //Fusion 360     RED
+#define KiCAD  6   //KiCAD 9.0      CYAN
 #define MOD    7   // mod (Bluetooth, bootloader, RGB, macros)  CYAN
 
 #include "macros.dtsi"
