@@ -58,7 +58,7 @@
             label = "P1";
 
             bindings = <
-&trans &trans &trans &trans &trans &trans &to BASE                                         &trans &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans &trans                                          &trans &trans &trans &trans &trans &trans &trans
 &trans &trans &trans &trans &trans &trans &trans                                           &trans &trans &trans &trans &trans &trans &trans
 &trans &trans &trans &trans &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans &trans &trans &trans &trans
 &trans &trans &trans &trans &trans &trans                      &trans &trans                     &trans &trans &trans &trans &trans &trans
@@ -72,7 +72,7 @@
             label = "VSC";
 
             bindings = <
-&trans &trans &trans &trans &trans &trans &to BASE                                         &trans &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans &trans                                          &trans &trans &trans &trans &trans &trans &trans
 &trans &trans &trans &trans &trans &trans &trans                                           &trans &trans &trans &trans &trans &trans &trans
 &trans &trans &trans &trans &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans &trans &trans &trans &trans
 &trans &trans &trans &trans &trans &trans                      &trans &trans                     &trans &trans &trans &trans &trans &trans
@@ -86,7 +86,7 @@
             label = "KICAD";
 
             bindings = <
-&trans &trans &trans &trans &trans &trans &to BASE                                         &trans &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans &trans                                          &trans &trans &trans &trans &trans &trans &trans
 &trans &trans &trans &trans &trans &trans &trans                                           &trans &trans &trans &trans &trans &trans &trans
 &trans &trans &trans &trans &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans &trans &trans &trans &trans
 &trans &trans &trans &trans &trans &trans                      &trans &trans                     &trans &trans &trans &trans &trans &trans
@@ -114,7 +114,7 @@
             label = "P2";
 
             bindings = <
-&trans &trans &trans &trans &trans &trans &to BASE                                         &trans &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans &trans                                          &trans &trans &trans &trans &trans &trans &trans
 &trans &trans &trans &trans &trans &trans &trans                                           &trans &trans &trans &trans &trans &trans &trans
 &trans &trans &trans &trans &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans &trans &trans &trans &trans
 &trans &trans &trans &trans &trans &trans                      &trans &trans                     &trans &trans &trans &trans &trans &trans
@@ -128,7 +128,7 @@
             label = "WIKI";
 
             bindings = <
-&trans &trans &trans &trans &trans &trans &to BASE                                         &trans &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans &trans                                          &trans &trans &trans &trans &trans &trans &trans
 &trans &trans &trans &trans &trans &trans &trans                                           &trans &trans &trans &trans &trans &trans &trans
 &trans &trans &trans &trans &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans &trans &trans &trans &trans
 &trans &trans &trans &trans &trans &trans                      &trans &trans                     &trans &trans &trans &trans &trans &trans
