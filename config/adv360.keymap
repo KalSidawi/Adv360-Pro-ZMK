@@ -44,7 +44,7 @@
             display-name = "Base";
 
             bindings = <
-&kp GRAVE  &kp N1    &kp N2    &kp N3    &kp N4     &kp N5       &tog KP                                                        &tog MOD              &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp GRAVE  &kp N1    &kp N2    &kp N3    &kp N4     &kp N5       &to KP                                                         &tog MOD              &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
 &kp EQUAL  &kp Q     &kp W     &kp E     &kp R      &kp T        &tog VSC                                                      &tog CAD           &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
 &kp TAB    &kp A     &kp S     &kp D     &kp F      &hm ENTER G  &tog KICAD  &kp LSHFT  &kp LCTRL      &kp RCTRL  &kp RSHFT    &tog WIKI          &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z     &kp X     &kp C     &kp V      &kp B                               &kp LALT       &kp RALT                                   &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
@@ -140,11 +140,11 @@
             display-name = "Kp";
 
             bindings = <
-&kp GRAVE  &kp N1  &kp N2    &kp N3    &kp N4     &kp N5  &tog KP                                           &trans  &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
-&trans     &kp Q   &kp W     &kp E     &kp R      &kp T   &none                                              &none   &kp Y   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
+&kp GRAVE  &kp N1  &kp N2    &kp N3    &kp N4     &kp N5  &to BASE                                           &trans  &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
+&trans     &kp Q   &kp W     &kp E     &kp R      &kp T   &trans                                             &trans  &kp Y   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
 &kp TAB    &kp A   &kp S     &kp D     &kp F      &kp G   &trans  &trans  &kp LALT      &kp LGUI  &kp RCTRL  &trans  &kp H   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
 &kp LSHFT  &kp Z   &kp X     &kp C     &kp V      &kp B                   &trans        &trans                       &kp N   &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
-&mo BASE   &trans  &kp CAPS  &kp LEFT  &kp RIGHT          &trans  &trans  &trans        &trans    &kp KP_N0  &trans          &kp UP      &kp DOWN      &kp KP_DOT     &kp RBKT         &tog BASE
+&trans     &trans  &kp CAPS  &kp LEFT  &kp RIGHT          &trans  &trans  &trans        &trans    &kp KP_N0  &trans          &kp UP      &kp DOWN      &kp KP_DOT     &kp RBKT         &tog BASE
             >;
         };
 
