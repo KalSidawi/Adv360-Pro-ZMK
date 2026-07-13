@@ -44,7 +44,7 @@
             display-name = "Base";
 
             bindings = <
-&kp GRAVE  &kp N1    &kp N2    &kp N3    &kp N4     &kp N5       &tog KP                                                        &tog MOD              &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp GRAVE  &kp N1    &kp N2    &kp N3    &kp N4     &kp N5       &tog 7                                                        &mo 10              &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
 &kp EQUAL  &kp Q     &kp W     &kp E     &kp R      &kp T        &tog VSC                                                      &tog CAD           &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
 &kp TAB    &kp A     &kp S     &kp D     &kp F      &hm ENTER G  &tog KICAD  &kp LSHFT  &kp LCTRL      &kp RCTRL  &kp RSHFT    &tog WIKI          &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z     &kp X     &kp C     &kp V      &kp B                               &kp LALT       &kp RALT                                   &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
@@ -68,7 +68,6 @@
 
         VisualStudioCode {
             display-name = "VSCode";
-            status = "reserved";
             label = "VSC";
 
             bindings = <
@@ -82,7 +81,6 @@
 
         KiCAD {
             display-name = "KiCAD9";
-            status = "reserved";
             label = "KICAD";
 
             bindings = <
@@ -96,7 +94,6 @@
 
         FreeCAD {
             display-name = "FreeCAD"; // FreeCAD layer - color RED
-            status = "reserved";
             label = "CAD";
 
             bindings = <
@@ -124,7 +121,6 @@
 
         Wiki {
             display-name = "Wiki";
-            status = "reserved";
             label = "WIKI";
 
             bindings = <
@@ -138,8 +134,6 @@
 
         keypad {
             display-name = "Kp";
-            status = "reserved";
-            label = "KP";
 
             bindings = <
 &kp GRAVE  &kp N1  &kp N2    &kp N3    &kp N4     &kp N5  &tog KP                                           &trans  &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
@@ -182,7 +176,7 @@
             display-name = "Mod"; // color RED
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &to BASE                                          &trans        &none  &none            &none       &none       &none  &none
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                          &trans        &none  &none            &none       &none       &none  &none
 &none       &none         &none         &none         &none         &none         &bootloader                                       &bootloader   &none  &none            &none       &none       &none  &none
 &none       &none         &none         &none         &none         &none         &none        &none  &none      &none  &bt BT_CLR  &stp STP_BAT  &none  &none            &none       &none       &none  &none
 &none       &none         &none         &none         &none         &macro_ver                        &none      &none                            &none  &none            &none       &none       &none  &none
