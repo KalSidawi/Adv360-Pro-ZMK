@@ -99,7 +99,7 @@
 
             bindings = <
 &kp L      &kp R       &kp C     &kp T     &kp E      &kp F    &to BASE                                        &trans  &kp O      &kp P     &kp Z    &kp Y   &kp ESC    &kp DEL
-&kp S      &kp X       &kp V     &kp Q     &kp D      &kp G    &trans                                          &trans  &kp U      &kp I     &kp J    &kp K   &kp ENTER  &kp BSPC
+&kp S      &kp X       &kp V     &kp Q     &kp D      &kp G    &tog CAD                                        &tog CAD  &kp U      &kp I     &kp J    &kp K   &kp ENTER  &kp BSPC
 &kp LCTRL  &kp LSHIFT  &kp LALT  &kp LGUI  &kp SPACE  &kp TAB  &trans  &trans  &trans      &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp HOME  &kp END  &trans  &trans     &trans
 &trans     &trans      &trans    &trans    &trans     &trans                   &trans      &trans                      &trans     &trans    &trans   &trans  &trans     &trans
 &trans     &trans      &trans    &trans    &trans              &trans  &trans  &trans      &trans    &trans    &trans             &trans    &trans   &trans  &trans     &trans
