@@ -130,10 +130,10 @@
       display-name = "Fn";
        bindings = <
         &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6  &none                                                                         &none &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
-        &trans &trans &trans &trans &trans &trans  &none                                                                         &none &trans &trans &trans &trans  &trans  &trans
-        &trans &trans &trans &trans &trans &trans  &none                      &trans &trans         &trans &trans                &none &trans &trans &trans &trans  &trans  &trans
-        &trans &trans &trans &trans &trans &trans                                    &trans         &trans                             &trans &trans &trans &trans  &trans  &trans
-        &trans &trans &trans &trans &trans                             &trans &trans &trans  &trans &trans &trans                             &trans &trans &trans  &trans  &trans
+        &trans &trans &tog WIKI &trans &trans &trans  &none                                                                         &none &trans &trans &trans &trans  &trans  &trans
+        &trans &trans &tog SYM &trans &trans &trans  &none                      &trans &trans         &trans &trans                &none &trans &trans &tog KICAD &trans  &trans  &trans
+        &trans &trans &trans &tog CAD &tog VSC &trans                                    &trans         &trans                             &trans &trans &trans &trans  &trans  &trans
+        &trans &trans &trans &trans &trans                             &trans &trans &to BASE  &to BASE &trans &trans                             &trans &trans &tog P1 &tog P2 &trans
       >;
     };
 
