@@ -40,7 +40,13 @@
 
     Placeholder1 {
       display-name = "P1";
-      status = "reserved";
+      bindings = <
+        &trans &trans &trans &trans &trans &trans &trans                                          &trans &trans &trans &trans &trans &trans &trans
+        &trans &trans &trans &trans &trans &trans &trans                                           &trans &trans &trans &trans &trans &trans &trans
+        &trans &trans &trans &trans &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans &trans &trans &trans &trans
+        &trans &trans &trans &trans &trans &trans                      &trans &trans                     &trans &trans &trans &trans &trans &trans
+        &trans &trans &trans &trans &trans        &trans &trans &trans       &trans &trans &trans        &trans &trans &trans &trans &trans
+      >;
     };
 
     VisualStudioCode {
@@ -78,7 +84,13 @@
 
     Placeholder2 {
       display-name = "P2";
-      status = "reserved";
+      bindings = <
+        &trans &trans &trans &trans &trans &trans &trans                                          &trans &trans &trans &trans &trans &trans &trans
+        &trans &trans &trans &trans &trans &trans &trans                                           &trans &trans &trans &trans &trans &trans &trans
+        &trans &trans &trans &trans &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans &trans &trans &trans &trans
+        &trans &trans &trans &trans &trans &trans                      &trans &trans                     &trans &trans &trans &trans &trans &trans
+        &trans &trans &trans &trans &trans        &trans &trans &trans       &trans &trans &trans        &trans &trans &trans &trans &trans
+      >;
     };
 
     Wiki {
