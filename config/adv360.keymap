@@ -19,24 +19,6 @@
 #define MOD 10
 
 / {
-    macros {
-        macro_parens: macro_parens {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp EQUAL &kp SPACE &kp LPAR &kp RPAR &kp LEFT>;
-        };
-        macro_brackets: macro_brackets {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp EQUAL &kp SPACE &kp LBKT &kp RBKT &kp LEFT>;
-        };
-        macro_braces: macro_braces {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp EQUAL &kp SPACE &kp LBRC &kp RBRC &kp LEFT>;
-        };
-    };
-
     behaviors {
       #include "version.dtsi"
       #include "macros.dtsi"
@@ -160,8 +142,8 @@
       bindings = <
         &trans &trans &trans &trans &trans &trans &trans                                           &trans &trans &trans &trans &trans &trans &trans
         &trans &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT &trans                                  &trans &kp AMPS &kp RPAR &kp RBRC &kp RBKT &kp GRAVE &trans
-        &trans &kp TILDE &kp MINUS &kp PLUS &kp EQUAL &kp UNDER &trans &trans &trans  &trans &trans &trans &kp STAR &ht_parens LPAR &ht_braces LBRC &ht_brackets LBKT &kp COLON &trans
-        &trans &kp CARET &kp FSLH &kp SQT &kp DQT &trans                 &trans &trans                    &kp BSLH &kp PIPE &kp LT &kp GT &kp QMARK &trans
+        &trans &kp TILDE &kp MINUS &kp PLUS &kp UNDER &kp EQUAL &trans &trans &trans  &trans &trans &trans &kp EQUAL &ht_parens LPAR &ht_braces LBRC &ht_brackets LBKT &kp COLON &trans
+        &trans &kp CARET &kp FSLH &kp SQT &kp DQT &trans                 &trans &trans                    &kp STAR &kp PIPE &kp LT &kp GT &kp QMARK &trans
         &trans &trans &trans &trans &trans             &trans &trans &trans       &trans &trans &trans             &trans &trans &trans &trans &trans
       >;
     };
