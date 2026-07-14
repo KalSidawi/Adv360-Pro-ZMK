@@ -22,28 +22,6 @@
     behaviors {
       #include "version.dtsi"
       #include "macros.dtsi"
-
-      ht_parens: ht_parens {
-          compatible = "zmk,behavior-hold-tap";
-          #binding-cells = <1>;
-          flavor = "tap-preferred";
-          tapping-term-ms = <200>;
-          bindings = <&macro_parens>, <&kp>;
-      };
-      ht_brackets: ht_brackets {
-          compatible = "zmk,behavior-hold-tap";
-          #binding-cells = <1>;
-          flavor = "tap-preferred";
-          tapping-term-ms = <200>;
-          bindings = <&macro_brackets>, <&kp>;
-      };
-      ht_braces: ht_braces {
-          compatible = "zmk,behavior-hold-tap";
-          #binding-cells = <1>;
-          flavor = "tap-preferred";
-          tapping-term-ms = <200>;
-          bindings = <&macro_braces>, <&kp>;
-      };
     };
 
   keymap {
@@ -142,9 +120,9 @@
       bindings = <
         &trans &trans &trans &trans &trans &trans &trans                                           &trans &trans &trans &trans &trans &trans &trans
         &trans &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT &trans                                  &trans &kp AMPS &kp RPAR &kp RBRC &kp RBKT &kp GRAVE &trans
-        &trans &kp TILDE &kp MINUS &kp PLUS &kp UNDER &kp EQUAL &trans &trans &trans  &trans &trans &trans &kp EQUAL &ht_parens LPAR &ht_braces LBRC &ht_brackets LBKT &kp COLON &trans
-        &trans &kp CARET &kp FSLH &kp SQT &kp DQT &trans                 &trans &trans                    &kp STAR &kp PIPE &kp LT &kp GT &kp QMARK &trans
-        &trans &trans &trans &trans &trans             &trans &trans &trans       &trans &trans &trans             &trans &trans &trans &trans &trans
+        &trans &kp TILDE &kp MINUS &kp PLUS &kp UNDER &kp EQUAL &trans &trans &trans  &macro_brackets &trans &trans &kp EQUAL &kp LPAR &kp LBRC &kp LBKT &kp COLON &trans
+        &trans &kp CARET &kp FSLH &kp SQT &kp DQT &trans                 &trans &macro_braces                    &kp STAR &kp PIPE &kp LT &kp GT &kp QMARK &trans
+        &trans &trans &trans &trans &trans             &trans &trans &trans       &macro_parens &trans &trans             &trans &trans &trans &trans &trans
       >;
     };
 
