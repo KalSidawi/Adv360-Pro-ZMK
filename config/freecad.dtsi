@@ -1,10 +1,9 @@
-
 // ══════════════════════════════════════════════════════════════════════════════
 // FREECAD MACROS & TAP-DANCES
 // ══════════════════════════════════════════════════════════════════════════════
 
 // --- MACROS: SKETCHER DOMAIN ---
-mac_fc_line: mac_fc_line {
+line: line {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <30>;
@@ -12,7 +11,7 @@ mac_fc_line: mac_fc_line {
     bindings = <&kp G>, <&kp L>;
 };
 
-mac_fc_poly: mac_fc_poly {
+polyline: polyline {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <30>;
@@ -20,7 +19,7 @@ mac_fc_poly: mac_fc_poly {
     bindings = <&kp G>, <&kp M>;
 };
 
-mac_fc_rect: mac_fc_rect {
+rectangle: rectangle {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <30>;
@@ -28,7 +27,7 @@ mac_fc_rect: mac_fc_rect {
     bindings = <&kp G>, <&kp R>;
 };
 
-mac_fc_slot: mac_fc_slot {
+slot: slot {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <30>;
@@ -36,7 +35,7 @@ mac_fc_slot: mac_fc_slot {
     bindings = <&kp G>, <&kp S>;
 };
 
-mac_fc_circ: mac_fc_circ {
+circle: circle {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <30>;
@@ -44,7 +43,7 @@ mac_fc_circ: mac_fc_circ {
     bindings = <&kp G>, <&kp C>;
 };
 
-mac_fc_arc: mac_fc_arc {
+arc: arc {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <30>;
@@ -52,15 +51,15 @@ mac_fc_arc: mac_fc_arc {
     bindings = <&kp G>, <&kp A>;
 };
 
-mac_fc_trim: mac_fc_trim {
+trim_edge: trim_edge {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <30>;
     tap-ms = <30>;
-    bindings = <&kp T>; // Often T or G, X
+    bindings = <&kp T>;
 };
 
-mac_fc_point: mac_fc_point {
+point: point {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <30>;
@@ -68,7 +67,7 @@ mac_fc_point: mac_fc_point {
     bindings = <&kp G>, <&kp P>;
 };
 
-mac_fc_extgeo: mac_fc_extgeo {
+ext_geo: ext_geo {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <30>;
@@ -76,7 +75,7 @@ mac_fc_extgeo: mac_fc_extgeo {
     bindings = <&kp G>, <&kp E>;
 };
 
-mac_fc_const: mac_fc_const {
+construct: construct {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <30>;
@@ -84,8 +83,9 @@ mac_fc_const: mac_fc_const {
     bindings = <&kp G>, <&kp T>;
 };
 
+
 // --- MACROS: PART DESIGN DOMAIN ---
-mac_fc_pad: mac_fc_pad {
+pad: pad {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <30>;
@@ -93,7 +93,7 @@ mac_fc_pad: mac_fc_pad {
     bindings = <&kp P>, <&kp A>;
 };
 
-mac_fc_pocket: mac_fc_pocket {
+pocket: pocket {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <30>;
@@ -101,7 +101,7 @@ mac_fc_pocket: mac_fc_pocket {
     bindings = <&kp P>, <&kp O>;
 };
 
-mac_fc_revolve: mac_fc_revolve {
+revolve: revolve {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <30>;
@@ -109,7 +109,7 @@ mac_fc_revolve: mac_fc_revolve {
     bindings = <&kp R>, <&kp E>;
 };
 
-mac_fc_groove: mac_fc_groove {
+groove: groove {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <30>;
@@ -117,7 +117,7 @@ mac_fc_groove: mac_fc_groove {
     bindings = <&kp G>, <&kp R>;
 };
 
-mac_fc_fillet: mac_fc_fillet {
+fillet: fillet {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <30>;
@@ -125,7 +125,7 @@ mac_fc_fillet: mac_fc_fillet {
     bindings = <&kp F>, <&kp I>;
 };
 
-mac_fc_chamfer: mac_fc_chamfer {
+chamfer: chamfer {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <30>;
@@ -133,7 +133,7 @@ mac_fc_chamfer: mac_fc_chamfer {
     bindings = <&kp C>, <&kp H>;
 };
 
-mac_fc_linpat: mac_fc_linpat {
+lin_pattern: lin_pattern {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <30>;
@@ -141,7 +141,7 @@ mac_fc_linpat: mac_fc_linpat {
     bindings = <&kp L>, <&kp P>;
 };
 
-mac_fc_polpat: mac_fc_polpat {
+pol_pattern: pol_pattern {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <30>;
@@ -149,7 +149,7 @@ mac_fc_polpat: mac_fc_polpat {
     bindings = <&kp P>, <&kp P>;
 };
 
-mac_fc_mirror: mac_fc_mirror {
+mirror: mirror {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <30>;
@@ -157,7 +157,7 @@ mac_fc_mirror: mac_fc_mirror {
     bindings = <&kp M>, <&kp I>;
 };
 
-mac_fc_multitrans: mac_fc_multitrans {
+multi_trans: multi_trans {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <30>;
@@ -165,7 +165,7 @@ mac_fc_multitrans: mac_fc_multitrans {
     bindings = <&kp M>, <&kp T>;
 };
 
-mac_fc_newskch: mac_fc_newskch {
+new_sketch: new_sketch {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <30>;
@@ -173,16 +173,17 @@ mac_fc_newskch: mac_fc_newskch {
     bindings = <&kp C>, <&kp S>;
 };
 
-mac_fc_lvskch: mac_fc_lvskch {
+leave_sketch: leave_sketch {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <30>;
     tap-ms = <30>;
-    bindings = <&kp ESC>; // Or specific shortcut to leave
+    bindings = <&kp ESC>;
 };
 
+
 // --- MACROS: CONSTRAINTS DOMAIN ---
-mac_fc_coinc: mac_fc_coinc {
+coincident: coincident {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <30>;
@@ -190,7 +191,7 @@ mac_fc_coinc: mac_fc_coinc {
     bindings = <&kp C>;
 };
 
-mac_fc_ptobj: mac_fc_ptobj {
+pt_on_obj: pt_on_obj {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <30>;
@@ -198,7 +199,7 @@ mac_fc_ptobj: mac_fc_ptobj {
     bindings = <&kp O>;
 };
 
-mac_fc_horiz: mac_fc_horiz {
+horizontal: horizontal {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <30>;
@@ -206,7 +207,7 @@ mac_fc_horiz: mac_fc_horiz {
     bindings = <&kp H>;
 };
 
-mac_fc_vert: mac_fc_vert {
+vertical: vertical {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <30>;
@@ -214,7 +215,7 @@ mac_fc_vert: mac_fc_vert {
     bindings = <&kp V>;
 };
 
-mac_fc_dist: mac_fc_dist {
+distance: distance {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <30>;
@@ -222,7 +223,7 @@ mac_fc_dist: mac_fc_dist {
     bindings = <&kp K>, <&kp D>;
 };
 
-mac_fc_rad: mac_fc_rad {
+radius: radius {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <30>;
@@ -230,7 +231,7 @@ mac_fc_rad: mac_fc_rad {
     bindings = <&kp K>, <&kp R>;
 };
 
-mac_fc_equal: mac_fc_equal {
+equal_const: equal_const {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <30>;
@@ -238,7 +239,7 @@ mac_fc_equal: mac_fc_equal {
     bindings = <&kp E>;
 };
 
-mac_fc_symm: mac_fc_symm {
+symmetric: symmetric {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <30>;
@@ -246,7 +247,7 @@ mac_fc_symm: mac_fc_symm {
     bindings = <&kp S>;
 };
 
-mac_fc_para: mac_fc_para {
+parallel: parallel {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <30>;
@@ -254,7 +255,7 @@ mac_fc_para: mac_fc_para {
     bindings = <&kp P>;
 };
 
-mac_fc_perp: mac_fc_perp {
+perpendic: perpendic {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <30>;
@@ -262,117 +263,122 @@ mac_fc_perp: mac_fc_perp {
     bindings = <&kp N>;
 };
 
+
+// ══════════════════════════════════════════════════════════════════════════════
+// TAP-DANCE DEFINITIONS
+// ══════════════════════════════════════════════════════════════════════════════
+
 // --- TAP-DANCES: SKETCHER DOMAIN ---
-td_fc_line: td_fc_line {
+td_line_poly: td_line_poly {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
     tapping-term-ms = <250>;
-    bindings = <&mac_fc_line>, <&mac_fc_poly>;
+    bindings = <&line>, <&polyline>;
 };
 
-td_fc_rect: td_fc_rect {
+td_rect_slot: td_rect_slot {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
     tapping-term-ms = <250>;
-    bindings = <&mac_fc_rect>, <&mac_fc_slot>;
+    bindings = <&rectangle>, <&slot>;
 };
 
-td_fc_circ: td_fc_circ {
+td_circ_arc: td_circ_arc {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
     tapping-term-ms = <250>;
-    bindings = <&mac_fc_circ>, <&mac_fc_arc>;
+    bindings = <&circle>, <&arc>;
 };
 
-td_fc_trim: td_fc_trim {
+td_trim_pt: td_trim_pt {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
     tapping-term-ms = <250>;
-    bindings = <&mac_fc_trim>, <&mac_fc_point>;
+    bindings = <&trim_edge>, <&point>;
 };
 
-td_fc_extgeo: td_fc_extgeo {
+td_prjct_const: td_prjct_const {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
     tapping-term-ms = <250>;
-    bindings = <&mac_fc_extgeo>, <&mac_fc_const>;
+    bindings = <&ext_geo>, <&construct>;
 };
 
 // --- TAP-DANCES: PART DESIGN DOMAIN ---
-td_fc_pad: td_fc_pad {
+td_pad_pock: td_pad_pock {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
     tapping-term-ms = <250>;
-    bindings = <&mac_fc_pad>, <&mac_fc_pocket>;
+    bindings = <&pad>, <&pocket>;
 };
 
-td_fc_revolve: td_fc_revolve {
+td_rev_groov: td_rev_groov {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
     tapping-term-ms = <250>;
-    bindings = <&mac_fc_revolve>, <&mac_fc_groove>;
+    bindings = <&revolve>, <&groove>;
 };
 
-td_fc_fillet: td_fc_fillet {
+td_fill_cham: td_fill_cham {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
     tapping-term-ms = <250>;
-    bindings = <&mac_fc_fillet>, <&mac_fc_chamfer>;
+    bindings = <&fillet>, <&chamfer>;
 };
 
-td_fc_linpat: td_fc_linpat {
+td_lin_polar: td_lin_polar {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
     tapping-term-ms = <250>;
-    bindings = <&mac_fc_linpat>, <&mac_fc_polpat>;
+    bindings = <&lin_pattern>, <&pol_pattern>;
 };
 
-td_fc_mirror: td_fc_mirror {
+td_mir_trans: td_mir_trans {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
     tapping-term-ms = <250>;
-    bindings = <&mac_fc_mirror>, <&mac_fc_multitrans>;
+    bindings = <&mirror>, <&multi_trans>;
 };
 
-td_fc_skch: td_fc_skch {
+td_sketch: td_sketch {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
     tapping-term-ms = <250>;
-    bindings = <&mac_fc_newskch>, <&mac_fc_lvskch>;
+    bindings = <&new_sketch>, <&leave_sketch>;
 };
 
 // --- TAP-DANCES: CONSTRAINTS DOMAIN ---
-td_fc_coinc: td_fc_coinc {
+td_coincident: td_coincident {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
     tapping-term-ms = <250>;
-    bindings = <&mac_fc_coinc>, <&mac_fc_ptobj>;
+    bindings = <&coincident>, <&pt_on_obj>;
 };
 
-td_fc_dist: td_fc_dist {
+td_distance: td_distance {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
     tapping-term-ms = <250>;
-    bindings = <&mac_fc_dist>, <&mac_fc_rad>;
+    bindings = <&distance>, <&radius>;
 };
 
-td_fc_horiz: td_fc_horiz {
+td_horizontal: td_horizontal {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
     tapping-term-ms = <250>;
-    bindings = <&mac_fc_horiz>, <&mac_fc_vert>;
+    bindings = <&horizontal>, <&vertical>;
 };
 
-td_fc_equal: td_fc_equal {
+td_equal_sym: td_equal_sym {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
     tapping-term-ms = <250>;
-    bindings = <&mac_fc_equal>, <&mac_fc_symm>;
+    bindings = <&equal_const>, <&symmetric>;
 };
 
-td_fc_para: td_fc_para {
+td_parallel: td_parallel {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
     tapping-term-ms = <250>;
-    bindings = <&mac_fc_para>, <&mac_fc_perp>;
+    bindings = <&parallel>, <&perpendic>;
 };
