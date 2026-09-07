@@ -269,35 +269,35 @@ perpendic: perpendic {
 // ══════════════════════════════════════════════════════════════════════════════
 
 // --- TAP-DANCES: SKETCHER DOMAIN ---
-td_line_poly: td_line_poly {
+line_polyline: line_polyline {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
     tapping-term-ms = <250>;
     bindings = <&line>, <&polyline>;
 };
 
-td_rect_slot: td_rect_slot {
+rectang_slot: rectang_slot {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
     tapping-term-ms = <250>;
     bindings = <&rectangle>, <&slot>;
 };
 
-td_circ_arc: td_circ_arc {
+circle_arc: circle_arc {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
     tapping-term-ms = <250>;
     bindings = <&circle>, <&arc>;
 };
 
-td_trim_pt: td_trim_pt {
+trim_point: trim_point {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
     tapping-term-ms = <250>;
     bindings = <&trim_edge>, <&point>;
 };
 
-td_prjct_const: td_prjct_const {
+prject_constr: prject_constr {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
     tapping-term-ms = <250>;
@@ -305,42 +305,42 @@ td_prjct_const: td_prjct_const {
 };
 
 // --- TAP-DANCES: PART DESIGN DOMAIN ---
-td_pad_pock: td_pad_pock {
+pad_pocket: pad_pocket {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
     tapping-term-ms = <250>;
     bindings = <&pad>, <&pocket>;
 };
 
-td_rev_groov: td_rev_groov {
+revolve_groov: revolve_groov {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
     tapping-term-ms = <250>;
     bindings = <&revolve>, <&groove>;
 };
 
-td_fill_cham: td_fill_cham {
+fillet_chamfr: fillet_chamfr {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
     tapping-term-ms = <250>;
     bindings = <&fillet>, <&chamfer>;
 };
 
-td_lin_polar: td_lin_polar {
+linear_polar: linear_polar {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
     tapping-term-ms = <250>;
     bindings = <&lin_pattern>, <&pol_pattern>;
 };
 
-td_mir_trans: td_mir_trans {
+mirror_mtrans: mirror_mtrans {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
     tapping-term-ms = <250>;
     bindings = <&mirror>, <&multi_trans>;
 };
 
-td_sketch: td_sketch {
+sketch_in_out: sketch_in_out {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
     tapping-term-ms = <250>;
@@ -348,35 +348,35 @@ td_sketch: td_sketch {
 };
 
 // --- TAP-DANCES: CONSTRAINTS DOMAIN ---
-td_coincident: td_coincident {
+coinc_pt_obj: coinc_pt_obj {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
     tapping-term-ms = <250>;
     bindings = <&coincident>, <&pt_on_obj>;
 };
 
-td_distance: td_distance {
+dist_radius: dist_radius {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
     tapping-term-ms = <250>;
     bindings = <&distance>, <&radius>;
 };
 
-td_horizontal: td_horizontal {
+horiz_vert: horiz_vert {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
     tapping-term-ms = <250>;
     bindings = <&horizontal>, <&vertical>;
 };
 
-td_equal_sym: td_equal_sym {
+equal_symm: equal_symm {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
     tapping-term-ms = <250>;
     bindings = <&equal_const>, <&symmetric>;
 };
 
-td_parallel: td_parallel {
+parallel_perp: parallel_perp {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
     tapping-term-ms = <250>;
