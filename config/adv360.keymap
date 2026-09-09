@@ -16,10 +16,10 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define BASE 0
-#define P1 1
+#define PDES 1
 #define VSC 2
 #define KICAD 3
-#define CAD 4
+#define SKCH 4
 #define CONSTRAINTS 5
 #define WIKI 6
 #define KP 7
@@ -40,32 +40,32 @@
     default_layer {
       display-name = "Base";
       // ╔══════════════╦══════════════╦══════════════╦══════════════╦══════════════╦══════════════╦══════════════╗                                                                          ╔══════════════╦══════════════╦══════════════╦══════════════╦══════════════╦══════════════╦══════════════╗
-      // ║  &kp GRAVE   ║    &kp N1    ║    &kp N2    ║    &kp N3    ║    &kp N4    ║    &kp N5    ║   &tog KP    ║                                                                          ║   &mo MOD    ║    &kp N6    ║    &kp N7    ║    &kp N8    ║    &kp N9    ║    &kp N0    ║  &kp MINUS   ║
+      // ║  &kp GRAVE   ║    &kp N1    ║    &kp N2    ║    &kp N3    ║    &kp N4    ║    &kp N5    ║  &tog PDES   ║                                                                          ║   &mo MOD    ║    &kp N6    ║    &kp N7    ║    &kp N8    ║    &kp N9    ║    &kp N0    ║  &kp MINUS   ║
       // ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣                                                                          ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣
-      // ║  &kp EQUAL   ║    &kp Q     ║    &kp W     ║    &kp E     ║    &kp R     ║    &kp T     ║   &tog CAD   ║                                                                          ║  &kp INSERT  ║    &kp Y     ║    &kp U     ║    &kp I     ║    &kp O     ║    &kp P     ║   &kp BSLH   ║
+      // ║  &kp EQUAL   ║    &kp Q     ║    &kp W     ║    &kp E     ║    &kp R     ║    &kp T     ║  &tog SKCH   ║                                                                          ║  &kp INSERT  ║    &kp Y     ║    &kp U     ║    &kp I     ║    &kp O     ║    &kp P     ║   &kp BSLH   ║
       // ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣   ╔══════════════╦══════════════╗╔═══════════════╦══════════════╗        ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣
-      // ║   &kp TAB    ║    &kp A     ║    &kp S     ║    &kp D     ║    &kp F     ║  &lt SYM G   ║   &kp LGUI   ║   ║  &kp LSHFT   ║  &kp LCTRL   ║║   &kp RCTRL   ║  &kp RSHFT   ║        ║   &kp RGUI   ║  &lt SYM H   ║    &kp J     ║    &kp K     ║    &kp L     ║   &kp SEMI   ║   &kp SQT    ║
+      // ║   &kp TAB    ║    &kp A     ║    &kp S     ║    &kp D     ║    &kp F     ║  &lt SYM G   ║   &kp LGUI   ║   ║  &kp LSHFT   ║  &kp LCTRL   ║║   &kp RCTRL   ║  &kp RSHFT   ║        ║ &kp_numlock  ║  &lt SYM H   ║    &kp J     ║    &kp K     ║    &kp L     ║   &kp SEMI   ║   &kp SQT    ║
       // ║              ║              ║              ║              ║              ║              ║              ║   ║              ║              ║║               ║              ║        ║              ║              ║              ║              ║              ║              ║              ║
       // ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╝   ╚══════════════╬══════════════╣╠═══════════════╬══════════════╝        ╚══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣
       // ║  &kp LSHFT   ║    &kp Z     ║    &kp X     ║    &kp C     ║    &kp V     ║    &kp B     ║                                 ║   &kp LALT   ║║   &kp RALT    ║                                      ║    &kp N     ║    &kp M     ║  &kp COMMA   ║   &kp DOT    ║   &kp FSLH   ║  &kp RSHFT   ║
       // ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╝ ╔════════════════╦══════════════╬══════════════╣╠═══════════════╬══════════════╦═══════════╗           ╚══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣
       // ║    &mo FN    ║   &kp HOME   ║   &kp CAPS   ║   &kp LEFT   ║  &kp RIGHT   ║                ║   &kp DELETE   ║  &kp ENTER   ║   &kp ESC    ║║    &kp ESC    ║  &kp SPACE   ║ &kp BSPC  ║                          ║    &kp UP    ║   &kp DOWN   ║   &kp LBKT   ║   &kp RBKT   ║    &mo FN    ║
       // ╚══════════════╩══════════════╩══════════════╩══════════════╩══════════════╝                ╚════════════════╩══════════════╩══════════════╝╚═══════════════╩══════════════╩═══════════╝                          ╚══════════════╩══════════════╩══════════════╩══════════════╩══════════════╝
-      bindings = <
-        &kp GRAVE &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog KP                                                       &mo MOD    &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS
-        &kp EQUAL &kp Q     &kp W    &kp E    &kp R      &kp T  &tog CAD                                                       &kp INSERT &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
-        &kp TAB   &kp A     &kp S    &kp D    &kp F  &lt SYM G  &kp LGUI        &kp LSHFT    &kp LCTRL  &kp RCTRL &kp RSHFT   &kp RGUI   &lt SYM H &kp J  &kp K     &kp L    &kp SEMI &kp SQT
+            bindings = <
+        &kp GRAVE &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog PDES                                                      &mo MOD    &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS
+        &kp EQUAL &kp Q     &kp W    &kp E    &kp R      &kp T  &tog SKCH                                                      &kp INSERT &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
+        &kp TAB   &kp A     &kp S    &kp D    &kp F  &lt SYM G  &kp LGUI        &kp LSHFT    &kp LCTRL  &kp RCTRL &kp RSHFT   &kp_numlock &lt SYM H &kp J  &kp K     &kp L    &kp SEMI &kp SQT
         &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                               &kp LALT  &kp RALT                        &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
         &mo FN    &kp HOME  &kp CAPS &kp LEFT &kp RIGHT                &kp DELETE  &kp ENTER &kp ESC    &kp ESC   &kp SPACE  &kp BSPC         &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo FN
       >;
     };
 
-    Placeholder1 {
-      display-name = "P1";
+    PartDesign {
+      display-name = "PartDesign";
       // ╔══════════════╦══════════════╦══════════════╦══════════════╦══════════════╦══════════════╦══════════════╗                                                                          ╔══════════════╦══════════════╦══════════════╦══════════════╦══════════════╦══════════════╦══════════════╗
-      // ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║                                                                          ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
+      // ║    &trans    ║&linear_polar ║&fillet_chamfr║    &trans    ║    &trans    ║    &trans    ║  &tog PDES   ║                                                                          ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
       // ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣                                                                          ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣
-      // ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║                                                                          ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
+      // ║    &trans    ║&mirror_mtrans║    &trans    ║&revolve_groov║ &pad_pocket  ║&sketch_in_out║&pdes_to_skch ║                                                                          ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
       // ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣   ╔══════════════╦══════════════╗╔═══════════════╦══════════════╗        ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣
       // ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║   ║    &trans    ║    &trans    ║║    &trans     ║    &trans    ║        ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
       // ║              ║              ║              ║              ║              ║              ║              ║   ║              ║              ║║               ║              ║        ║              ║              ║              ║              ║              ║              ║              ║
@@ -74,10 +74,10 @@
       // ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╝ ╔════════════════╦══════════════╬══════════════╣╠═══════════════╬══════════════╦═══════════╗           ╚══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣
       // ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║                ║     &trans     ║    &trans    ║    &trans    ║║    &trans     ║    &trans    ║  &trans   ║                          ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
       // ╚══════════════╩══════════════╩══════════════╩══════════════╩══════════════╝                ╚════════════════╩══════════════╩══════════════╝╚═══════════════╩══════════════╩═══════════╝                          ╚══════════════╩══════════════╩══════════════╩══════════════╩══════════════╝
-      bindings = <
-        &trans &trans &trans &trans &trans &trans &trans                                          &trans &trans &trans &trans &trans &trans &trans
-        &trans &trans &trans &trans &trans &trans &trans                                           &trans &trans &trans &trans &trans &trans &trans
-        &trans &trans &trans &trans &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans &trans &trans &trans &trans
+            bindings = <
+        &trans &linear_polar &fillet_chamfr &trans &trans &trans &tog PDES                                                    &trans &trans &trans &trans &trans &trans &trans
+        &trans &mirror_mtrans &trans &revolve_groov &pad_pocket &sketch_in_out &pdes_to_skch                                  &trans &trans &trans &trans &trans &trans &trans
+        &trans &trans &trans &trans &trans &trans &trans       &trans &trans    &trans &trans &trans &trans &trans &trans &trans &trans &trans
         &trans &trans &trans &trans &trans &trans                      &trans &trans                     &trans &trans &trans &trans &trans &trans
         &trans &trans &trans &trans &trans        &trans &trans &trans       &trans &trans &trans        &trans &trans &trans &trans &trans
       >;
@@ -97,7 +97,7 @@
       // ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╝ ╔════════════════╦══════════════╬══════════════╣╠═══════════════╬══════════════╦═══════════╗           ╚══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣
       // ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║                ║     &trans     ║    &trans    ║    &trans    ║║    &trans     ║    &trans    ║  &trans   ║                          ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
       // ╚══════════════╩══════════════╩══════════════╩══════════════╩══════════════╝                ╚════════════════╩══════════════╩══════════════╝╚═══════════════╩══════════════╩═══════════╝                          ╚══════════════╩══════════════╩══════════════╩══════════════╩══════════════╝
-      bindings = <
+            bindings = <
         &trans &trans &trans &trans &trans &trans &trans                                          &trans &trans &trans &trans &trans &trans &trans
         &trans &trans &trans &trans &trans &trans &trans                                           &trans &trans &trans &trans &trans &trans &trans
         &trans &trans &trans &trans &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans &trans &trans &trans &trans
@@ -120,7 +120,7 @@
       // ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╝ ╔════════════════╦══════════════╬══════════════╣╠═══════════════╬══════════════╦═══════════╗           ╚══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣
       // ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║                ║     &trans     ║    &trans    ║    &trans    ║║    &trans     ║    &trans    ║  &trans   ║                          ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
       // ╚══════════════╩══════════════╩══════════════╩══════════════╩══════════════╝                ╚════════════════╩══════════════╩══════════════╝╚═══════════════╩══════════════╩═══════════╝                          ╚══════════════╩══════════════╩══════════════╩══════════════╩══════════════╝
-      bindings = <
+            bindings = <
         &trans &trans &trans &trans &trans &trans &trans                                          &trans &trans &trans &trans &trans &trans &trans
         &trans &trans &trans &trans &trans &trans &trans                                           &trans &trans &trans &trans &trans &trans &trans
         &trans &trans &trans &trans &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans &trans &trans &trans &trans
@@ -129,26 +129,26 @@
       >;
     };
 
-    FreeCAD {
-      display-name = "FreeCAD";
+    Sketcher {
+      display-name = "Sketcher";
       // ╔══════════════╦══════════════╦══════════════╦══════════════╦══════════════╦══════════════╦══════════════╗                                                                          ╔══════════════╦══════════════╦══════════════╦══════════════╦══════════════╦══════════════╦══════════════╗
-      // ║    &trans    ║&linear_polar ║&fillet_chamfr║    &trans    ║    &trans    ║    &trans    ║    &trans    ║                                                                          ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
+      // ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║&skch_to_pdes ║                                                                          ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
       // ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣                                                                          ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣
-      // ║    &trans    ║&mirror_mtrans║    &trans    ║&revolve_groov║ &pad_pocket  ║&sketch_in_out║   &tog CAD   ║                                                                          ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
+      // ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║  &tog SKCH   ║                                                                          ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
       // ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣   ╔══════════════╦══════════════╗╔═══════════════╦══════════════╗        ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣
       // ║    &trans    ║ &trim_point  ║ &circle_arc  ║&rectang_slot ║&line_polyline║&prject_constr║    &trans    ║   ║    &trans    ║    &trans    ║║    &trans     ║    &trans    ║        ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
       // ║              ║              ║              ║              ║              ║              ║              ║   ║              ║              ║║               ║              ║        ║              ║              ║              ║              ║              ║              ║              ║
       // ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╝   ╚══════════════╬══════════════╣╠═══════════════╬══════════════╝        ╚══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣
-      // ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║                                 ║&mo CONSTRAINT║║&mo CONSTRAINTS║                                      ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
+      // ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║                                 ║    &trans    ║║    &trans     ║                                      ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
       // ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╝ ╔════════════════╦══════════════╬══════════════╣╠═══════════════╬══════════════╦═══════════╗           ╚══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣
-      // ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║                ║     &trans     ║    &trans    ║    &trans    ║║    &trans     ║    &trans    ║  &trans   ║                          ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
+      // ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║                ║     &trans     ║    &trans    ║&lt CONSTRAINT║║    &trans     ║    &trans    ║  &trans   ║                          ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
       // ╚══════════════╩══════════════╩══════════════╩══════════════╩══════════════╝                ╚════════════════╩══════════════╩══════════════╝╚═══════════════╩══════════════╩═══════════╝                          ╚══════════════╩══════════════╩══════════════╩══════════════╩══════════════╝
-      bindings = <
-        &trans &linear_polar &fillet_chamfr &trans &trans &trans &trans                                                    &trans &trans &trans &trans &trans &trans &trans
-        &trans &mirror_mtrans &trans &revolve_groov &pad_pocket &sketch_in_out &tog CAD                                        &trans &trans &trans &trans &trans &trans &trans
+            bindings = <
+        &trans &trans &trans &trans &trans &trans &skch_to_pdes                                                    &trans &trans &trans &trans &trans &trans &trans
+        &trans &trans &trans &trans &trans &trans &tog SKCH                                                        &trans &trans &trans &trans &trans &trans &trans
         &trans &trim_point &circle_arc &rectang_slot &line_polyline &prject_constr &trans       &trans &trans    &trans &trans &trans &trans &trans &trans &trans &trans &trans
-        &trans &trans &trans &trans &trans &trans                                &mo CONSTRAINTS &mo CONSTRAINTS                  &trans &trans &trans &trans &trans &trans
-        &trans &trans &trans &trans &trans                             &trans &trans &trans  &trans &trans &trans                        &trans &trans &trans &trans &trans
+        &trans &trans &trans &trans &trans &trans                                &trans &trans                  &trans &trans &trans &trans &trans &trans
+        &trans &trans &trans &trans &trans                             &trans &trans &lt CONSTRAINTS ESC  &trans &trans &trans                        &trans &trans &trans &trans &trans
       >;
     };
 
@@ -164,14 +164,14 @@
       // ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╝   ╚══════════════╬══════════════╣╠═══════════════╬══════════════╝        ╚══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣
       // ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║                                 ║    &trans    ║║    &trans     ║                                      ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
       // ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╝ ╔════════════════╦══════════════╬══════════════╣╠═══════════════╬══════════════╦═══════════╗           ╚══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣
-      // ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║                ║     &trans     ║    &trans    ║    &trans    ║║    &trans     ║    &trans    ║  &trans   ║                          ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
+      // ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║                ║     &trans     ║    &trans    ║&lt CONSTRAINT║║    &trans     ║    &trans    ║  &trans   ║                          ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
       // ╚══════════════╩══════════════╩══════════════╩══════════════╩══════════════╝                ╚════════════════╩══════════════╩══════════════╝╚═══════════════╩══════════════╩═══════════╝                          ╚══════════════╩══════════════╩══════════════╩══════════════╩══════════════╝
-      bindings = <
+            bindings = <
         &trans &trans &trans &trans &trans &trans &trans                                                                       &trans &trans &trans &trans &trans &trans &trans
         &trans &trans &trans &trans &trans &trans &trans                                                                       &trans &trans &trans &trans &trans &trans &trans
         &trans &equal_symm &dist_radius &horiz_vert &coinc_pt_obj &parallel_perp &trans    &trans &trans   &trans &trans   &trans &trans &trans &trans &trans &trans &trans
         &trans &trans &trans &trans &trans &trans                                              &trans &trans                   &trans &trans &trans &trans &trans &trans
-        &trans &trans &trans &trans &trans                             &trans &trans &trans    &trans &trans &trans                   &trans &trans &trans &trans &trans
+        &trans &trans &trans &trans &trans                             &trans &trans &lt CONSTRAINTS ESC    &trans &trans &trans                   &trans &trans &trans &trans &trans
       >;
     };
 
@@ -187,14 +187,14 @@
       // ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╝   ╚══════════════╬══════════════╣╠═══════════════╬══════════════╝        ╚══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣
       // ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║                                 ║    &trans    ║║    &trans     ║                                      ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
       // ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╝ ╔════════════════╦══════════════╬══════════════╣╠═══════════════╬══════════════╦═══════════╗           ╚══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣
-      // ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║                ║     &trans     ║    &trans    ║    &trans    ║║    &trans     ║    &trans    ║  &trans   ║                          ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
+      // ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║                ║     &trans     ║    &trans    ║&lt CONSTRAINT║║    &trans     ║    &trans    ║  &trans   ║                          ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
       // ╚══════════════╩══════════════╩══════════════╩══════════════╩══════════════╝                ╚════════════════╩══════════════╩══════════════╝╚═══════════════╩══════════════╩═══════════╝                          ╚══════════════╩══════════════╩══════════════╩══════════════╩══════════════╝
-      bindings = <
+            bindings = <
         &trans &trans &trans &trans &trans &trans &trans                                          &trans &trans &trans &trans &trans &trans &trans
         &trans &trans &trans &trans &trans &trans &trans                                           &trans &trans &trans &trans &trans &trans &trans
         &trans &trans &trans &trans &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans &trans &trans &trans &trans
         &trans &trans &trans &trans &trans &trans                      &trans &trans                     &trans &trans &trans &trans &trans &trans
-        &trans &trans &trans &trans &trans        &trans &trans &trans       &trans &trans &trans        &trans &trans &trans &trans &trans
+        &trans &trans &trans &trans &trans        &trans &trans &lt CONSTRAINTS ESC       &trans &trans &trans        &trans &trans &trans &trans &trans
       >;
     };
 
@@ -212,7 +212,7 @@
       // ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╝ ╔════════════════╦══════════════╬══════════════╣╠═══════════════╬══════════════╦═══════════╗           ╚══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣
       // ║    &mo FN    ║    &trans    ║   &kp CAPS   ║   &kp LEFT   ║  &kp RIGHT   ║                ║     &trans     ║    &trans    ║    &trans    ║║    &trans     ║  &kp KP_N0   ║  &trans   ║                          ║    &kp UP    ║   &kp DOWN   ║  &kp KP_DOT  ║   &kp RBKT   ║   &tog SYM   ║
       // ╚══════════════╩══════════════╩══════════════╩══════════════╩══════════════╝                ╚════════════════╩══════════════╩══════════════╝╚═══════════════╩══════════════╩═══════════╝                          ╚══════════════╩══════════════╩══════════════╩══════════════╩══════════════╝
-      bindings = <
+            bindings = <
         &kp GRAVE &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &trans                                                           &trans &kp N6 &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp MINUS
         &trans    &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                            &none &kp Y  &kp KP_N7  &kp KP_N8    &kp KP_N9     &kp KP_MINUS    &kp BSLH
         &kp TAB   &kp A     &kp S    &kp D    &kp F      &lt SYM G  &trans        &trans  &kp LALT     &kp LGUI  &kp RCTRL           &trans &lt SYM H  &kp KP_N4  &kp KP_N5    &kp KP_N6     &kp KP_PLUS     &kp SQT
@@ -235,7 +235,7 @@
       // ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╝ ╔════════════════╦══════════════╬══════════════╣╠═══════════════╬══════════════╦═══════════╗           ╚══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣
       // ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║                ║     &trans     ║    &trans    ║    &trans    ║║ &macro_parens ║    &trans    ║  &trans   ║                          ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
       // ╚══════════════╩══════════════╩══════════════╩══════════════╩══════════════╝                ╚════════════════╩══════════════╩══════════════╝╚═══════════════╩══════════════╩═══════════╝                          ╚══════════════╩══════════════╩══════════════╩══════════════╩══════════════╝
-      bindings = <
+            bindings = <
         &trans &trans &trans &trans &trans &trans &trans                                           &trans &trans &trans &trans &trans &trans &trans
         &trans &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT &trans                                  &trans &kp AMPS &kp RPAR &kp RBRC &kp RBKT &kp GRAVE &trans
         &trans &kp TILDE &kp MINUS &kp PLUS &kp UNDER &kp EQUAL &trans &trans &trans  &macro_brackets &trans &trans &kp EQUAL &kp LPAR &kp LBRC &kp LBKT &kp COLON &trans
@@ -254,16 +254,16 @@
       // ║    &trans    ║    &trans    ║   &tog SYM   ║    &trans    ║    &trans    ║    &trans    ║    &none     ║   ║    &trans    ║    &trans    ║║    &trans     ║    &trans    ║        ║    &none     ║    &trans    ║    &trans    ║  &tog KICAD  ║    &trans    ║    &trans    ║    &trans    ║
       // ║              ║              ║              ║              ║              ║              ║              ║   ║              ║              ║║               ║              ║        ║              ║              ║              ║              ║              ║              ║              ║
       // ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╝   ╚══════════════╬══════════════╣╠═══════════════╬══════════════╝        ╚══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣
-      // ║    &trans    ║    &trans    ║    &trans    ║   &tog CAD   ║   &tog VSC   ║    &trans    ║                                 ║    &trans    ║║    &trans     ║                                      ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
+      // ║    &trans    ║    &trans    ║    &trans    ║  &tog SKCH   ║   &tog VSC   ║    &trans    ║                                 ║    &trans    ║║    &trans     ║                                      ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
       // ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╝ ╔════════════════╦══════════════╬══════════════╣╠═══════════════╬══════════════╦═══════════╗           ╚══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣
-      // ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║                ║     &trans     ║    &trans    ║   &to BASE   ║║   &to BASE    ║    &trans    ║  &trans   ║                          ║    &trans    ║    &trans    ║   &tog P1    ║&tog CONSTRAIN║    &trans    ║
+      // ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║                ║     &trans     ║    &trans    ║   &to BASE   ║║   &to BASE    ║    &trans    ║  &trans   ║                          ║    &trans    ║    &trans    ║  &tog PDES   ║&tog CONSTRAIN║    &trans    ║
       // ╚══════════════╩══════════════╩══════════════╩══════════════╩══════════════╝                ╚════════════════╩══════════════╩══════════════╝╚═══════════════╩══════════════╩═══════════╝                          ╚══════════════╩══════════════╩══════════════╩══════════════╩══════════════╝
-      bindings = <
+            bindings = <
         &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6  &none                                                                         &none &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
         &trans &trans &tog WIKI &trans &trans &trans  &none                                                                         &none &trans &trans &trans &trans  &trans  &trans
         &trans &trans &tog SYM &trans &trans &trans  &none                      &trans &trans         &trans &trans                &none &trans &trans &tog KICAD &trans  &trans  &trans
-        &trans &trans &trans &tog CAD &tog VSC &trans                                    &trans         &trans                             &trans &trans &trans &trans  &trans  &trans
-        &trans &trans &trans &trans &trans                             &trans &trans &to BASE  &to BASE &trans &trans                             &trans &trans &tog P1 &tog CONSTRAINTS &trans
+        &trans &trans &trans &tog SKCH &tog VSC &trans                                    &trans         &trans                             &trans &trans &trans &trans  &trans  &trans
+        &trans &trans &trans &trans &trans                             &trans &trans &to BASE  &to BASE &trans &trans                             &trans &trans &tog PDES &tog CONSTRAINTS &trans
       >;
     };
 
@@ -281,7 +281,7 @@
       // ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╝ ╔════════════════╦══════════════╬══════════════╣╠═══════════════╬══════════════╦═══════════╗           ╚══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣
       // ║    &none     ║    &none     ║    &none     ║    &none     ║    &none     ║                ║     &none      ║    &none     ║    &none     ║║     &none     ║  &bl BL_TOG  ║&rgb_ug RGB║                          ║  &bl BL_INC  ║  &bl BL_DEC  ║    &none     ║    &none     ║    &none     ║
       // ╚══════════════╩══════════════╩══════════════╩══════════════╩══════════════╝                ╚════════════════╩══════════════╩══════════════╝╚═══════════════╩══════════════╩═══════════╝                          ╚══════════════╩══════════════╩══════════════╩══════════════╩══════════════╝
-      bindings = <
+            bindings = <
         &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none                                                                     &trans                 &none        &none        &none        &none &none &none
         &none      &none        &none        &none        &none        &none        &bootloader                                                               &bootloader            &none        &none        &none        &none &none &none
         &none      &none        &none        &none        &none        &none        &none              &none &none      &bt BT_CLR &stp STP_BAT         &none                  &none        &none        &none        &none &none &none

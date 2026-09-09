@@ -56,7 +56,7 @@ trim_edge: trim_edge {
     #binding-cells = <0>;
     wait-ms = <30>;
     tap-ms = <30>;
-    bindings = <&kp T>;
+    bindings = <&kp G>, <&kp T>;
 };
 
 point: point {
@@ -64,7 +64,7 @@ point: point {
     #binding-cells = <0>;
     wait-ms = <30>;
     tap-ms = <30>;
-    bindings = <&kp G>, <&kp P>;
+    bindings = <&kp G>, <&kp Y>;
 };
 
 ext_geo: ext_geo {
@@ -72,7 +72,7 @@ ext_geo: ext_geo {
     #binding-cells = <0>;
     wait-ms = <30>;
     tap-ms = <30>;
-    bindings = <&kp G>, <&kp E>;
+    bindings = <&kp G>, <&kp X>;
 };
 
 construct: construct {
@@ -80,7 +80,7 @@ construct: construct {
     #binding-cells = <0>;
     wait-ms = <30>;
     tap-ms = <30>;
-    bindings = <&kp G>, <&kp T>;
+    bindings = <&kp G>, <&kp N>;
 };
 
 
@@ -181,6 +181,30 @@ leave_sketch: leave_sketch {
     bindings = <&kp ESC>;
 };
 
+// --- MACROS: LAYER NAVIGATION ---
+kp_numlock: kp_numlock {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <30>;
+    tap-ms = <30>;
+    bindings = <&tog KP>, <&kp KP_NUM>;
+};
+
+skch_to_pdes: skch_to_pdes {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <30>;
+    tap-ms = <30>;
+    bindings = <&tog SKCH>, <&tog PDES>;
+};
+
+pdes_to_skch: pdes_to_skch {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <30>;
+    tap-ms = <30>;
+    bindings = <&tog PDES>, <&tog SKCH>;
+};
 
 // --- MACROS: CONSTRAINTS DOMAIN ---
 coincident: coincident {
