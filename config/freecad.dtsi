@@ -212,7 +212,7 @@ coincident: coincident {
     #binding-cells = <0>;
     wait-ms = <30>;
     tap-ms = <30>;
-    bindings = <&kp C>;
+    bindings = <&kp C>, <&kp C>;
 };
 
 pt_on_obj: pt_on_obj {
@@ -220,7 +220,7 @@ pt_on_obj: pt_on_obj {
     #binding-cells = <0>;
     wait-ms = <30>;
     tap-ms = <30>;
-    bindings = <&kp O>;
+    bindings = <&kp C>;
 };
 
 horizontal: horizontal {
@@ -244,7 +244,7 @@ distance: distance {
     #binding-cells = <0>;
     wait-ms = <30>;
     tap-ms = <30>;
-    bindings = <&kp K>, <&kp D>;
+    bindings = <&kp D>;
 };
 
 radius: radius {
