@@ -90,7 +90,7 @@ pad: pad {
     #binding-cells = <0>;
     wait-ms = <30>;
     tap-ms = <30>;
-    bindings = <&kp P>, <&kp A>;
+    bindings = <&kp F>, <&kp E>;
 };
 
 pocket: pocket {
@@ -98,7 +98,7 @@ pocket: pocket {
     #binding-cells = <0>;
     wait-ms = <30>;
     tap-ms = <30>;
-    bindings = <&kp P>, <&kp O>;
+    bindings = <&kp F>, <&kp O>;
 };
 
 revolve: revolve {
@@ -106,7 +106,7 @@ revolve: revolve {
     #binding-cells = <0>;
     wait-ms = <30>;
     tap-ms = <30>;
-    bindings = <&kp R>, <&kp E>;
+    bindings = <&kp F>, <&kp R>;
 };
 
 groove: groove {
@@ -114,7 +114,7 @@ groove: groove {
     #binding-cells = <0>;
     wait-ms = <30>;
     tap-ms = <30>;
-    bindings = <&kp G>, <&kp R>;
+    bindings = <&kp F>, <&kp G>;
 };
 
 fillet: fillet {
@@ -122,7 +122,7 @@ fillet: fillet {
     #binding-cells = <0>;
     wait-ms = <30>;
     tap-ms = <30>;
-    bindings = <&kp F>, <&kp I>;
+    bindings = <&kp F>, <&kp F>;
 };
 
 chamfer: chamfer {
@@ -130,7 +130,7 @@ chamfer: chamfer {
     #binding-cells = <0>;
     wait-ms = <30>;
     tap-ms = <30>;
-    bindings = <&kp C>, <&kp H>;
+    bindings = <&kp F>, <&kp C>;
 };
 
 lin_pattern: lin_pattern {
@@ -138,7 +138,7 @@ lin_pattern: lin_pattern {
     #binding-cells = <0>;
     wait-ms = <30>;
     tap-ms = <30>;
-    bindings = <&kp L>, <&kp P>;
+    bindings = <&kp F>, <&kp L>;
 };
 
 pol_pattern: pol_pattern {
@@ -146,7 +146,7 @@ pol_pattern: pol_pattern {
     #binding-cells = <0>;
     wait-ms = <30>;
     tap-ms = <30>;
-    bindings = <&kp P>, <&kp P>;
+    bindings = <&kp F>, <&kp P>;
 };
 
 mirror: mirror {
@@ -154,7 +154,7 @@ mirror: mirror {
     #binding-cells = <0>;
     wait-ms = <30>;
     tap-ms = <30>;
-    bindings = <&kp M>, <&kp I>;
+    bindings = <&kp F>, <&kp M>;
 };
 
 multi_trans: multi_trans {
@@ -162,7 +162,7 @@ multi_trans: multi_trans {
     #binding-cells = <0>;
     wait-ms = <30>;
     tap-ms = <30>;
-    bindings = <&kp M>, <&kp T>;
+    bindings = <&kp F>, <&kp T>;
 };
 
 new_sketch: new_sketch {
@@ -170,7 +170,7 @@ new_sketch: new_sketch {
     #binding-cells = <0>;
     wait-ms = <30>;
     tap-ms = <30>;
-    bindings = <&kp C>, <&kp S>;
+    bindings = <&kp F>, <&kp K>;
 };
 
 leave_sketch: leave_sketch {
@@ -178,7 +178,7 @@ leave_sketch: leave_sketch {
     #binding-cells = <0>;
     wait-ms = <30>;
     tap-ms = <30>;
-    bindings = <&kp ESC>;
+    bindings = <&kp LS(ESC)>;
 };
 
 // --- MACROS: LAYER NAVIGATION ---
