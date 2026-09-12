@@ -1,10 +1,10 @@
 // ╔══════════════════════════════════════════════════════════════════════════╗
-// ║  VISUAL HELPER TABLES: Each layer has an ASCII art comment block       ║
-// ║  above its bindings that mirrors the physical key layout.              ║
-// ║                                                                        ║
-// ║  RULE: When editing ANY layer's bindings, the corresponding ASCII      ║
-// ║  table comment MUST be updated to reflect the change. NEVER strip      ║
-// ║  these comments. They are the human-readable source of truth.          ║
+// ║  VISUAL HELPER TABLES: Each layer has an ASCII art comment block         ║
+// ║  above its bindings that mirrors the physical key layout.                ║
+// ║                                                                          ║
+// ║  RULE: When editing ANY layer's bindings, the corresponding ASCII        ║
+// ║  table comment MUST be updated to reflect the change. NEVER strip        ║
+// ║  these comments. They are the human-readable source of truth.            ║
 // ╚══════════════════════════════════════════════════════════════════════════╝
 
 #include <behaviors.dtsi>
@@ -134,20 +134,20 @@
       // ╔══════════════╦══════════════╦══════════════╦══════════════╦══════════════╦══════════════╦══════════════╗                                                                          ╔══════════════╦══════════════╦══════════════╦══════════════╦══════════════╦══════════════╦══════════════╗
       // ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║&skch_to_pdes ║                                                                          ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
       // ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣                                                                          ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣
-      // ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║  &tog SKCH   ║                                                                          ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
+      // ║    &trans    ║&bspl_comb_pol║&bspl_deg_up_d║&bspl_ins_mult║&bspl_crt_join║    &trans    ║  &tog SKCH   ║                                                                          ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
       // ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣   ╔══════════════╦══════════════╗╔═══════════════╦══════════════╗        ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣
       // ║    &trans    ║ &trim_point  ║ &circle_arc  ║&rectang_slot ║&line_polyline║&prject_constr║    &trans    ║   ║    &trans    ║    &trans    ║║    &trans     ║    &trans    ║        ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
       // ║              ║              ║              ║              ║              ║              ║              ║   ║              ║              ║║               ║              ║        ║              ║              ║              ║              ║              ║              ║              ║
       // ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╝   ╚══════════════╬══════════════╣╠═══════════════╬══════════════╝        ╚══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣
-      // ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║                                 ║    &trans    ║║    &trans     ║                                      ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
+      // ║    &trans    ║    &kp R     ║    &kp A     ║    &kp L     ║    &kp M     ║    &trans    ║                                 ║    &trans    ║║    &trans     ║                                      ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
       // ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╝ ╔════════════════╦══════════════╬══════════════╣╠═══════════════╬══════════════╦═══════════╗           ╚══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣
       // ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║                ║     &trans     ║    &trans    ║&lt CONSTRAINT║║    &trans     ║    &trans    ║  &trans   ║                          ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
       // ╚══════════════╩══════════════╩══════════════╩══════════════╩══════════════╝                ╚════════════════╩══════════════╩══════════════╝╚═══════════════╩══════════════╩═══════════╝                          ╚══════════════╩══════════════╩══════════════╩══════════════╩══════════════╝
             bindings = <
         &trans &trans &trans &trans &trans &trans &skch_to_pdes                                                    &trans &trans &trans &trans &trans &trans &trans
-        &trans &trans &trans &trans &trans &trans &tog SKCH                                                        &trans &trans &trans &trans &trans &trans &trans
+        &trans &bspl_comb_poly &bspl_deg_up_dn &bspl_ins_mult &bspl_crt_join &trans &tog SKCH                                                        &trans &trans &trans &trans &trans &trans &trans
         &trans &trim_point &circle_arc &rectang_slot &line_polyline &prject_constr &trans       &trans &trans    &trans &trans &trans &trans &trans &trans &trans &trans &trans
-        &trans &trans &trans &trans &trans &trans                                &trans &trans                  &trans &trans &trans &trans &trans &trans
+        &trans &kp R  &kp A  &kp L  &kp M &trans                       &trans &trans                     &trans &trans &trans &trans &trans &trans
         &trans &trans &trans &trans &trans                             &trans &trans &lt CONSTRAINTS ESC  &trans &trans &trans                        &trans &trans &trans &trans &trans
       >;
     };

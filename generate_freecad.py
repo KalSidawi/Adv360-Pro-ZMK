@@ -1,3 +1,4 @@
+macros_and_tds = """\
 // ══════════════════════════════════════════════════════════════════════════════
 // FREECAD MACROS & TAP-DANCES
 // ══════════════════════════════════════════════════════════════════════════════
@@ -498,3 +499,7 @@ parallel_perp: parallel_perp {
     tapping-term-ms = <250>;
     bindings = <&parallel>, <&perpendic>;
 };
+"""
+
+with open("config/freecad.dtsi", "w") as f:
+    f.write(macros_and_tds)
