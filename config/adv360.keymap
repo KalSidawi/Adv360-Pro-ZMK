@@ -63,7 +63,7 @@
     PartDesign {
       display-name = "PartDesign";
       // ╔══════════════╦══════════════╦══════════════╦══════════════╦══════════════╦══════════════╦══════════════╗                                                                          ╔══════════════╦══════════════╦══════════════╦══════════════╦══════════════╦══════════════╦══════════════╗
-      // ║    &trans    ║&linear_polar ║&fillet_chamfr║    &trans    ║    &trans    ║    &trans    ║  &tog PDES   ║                                                                          ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║  &varset_td  ║    &trans    ║
+      // ║    &trans    ║&linear_polar ║&fillet_chamfr║    &trans    ║    &trans    ║    &trans    ║  &tog PDES   ║                                                                          ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║  &varset_td_pdes  ║    &trans    ║
       // ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣                                                                          ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣
       // ║    &trans    ║&mirror_mtrans║    &trans    ║&revolve_groov║ &pad_pocket  ║&sketch_in_out║&pdes_to_skch ║                                                                          ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
       // ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣   ╔══════════════╦══════════════╗╔═══════════════╦══════════════╗        ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣
@@ -78,7 +78,7 @@
         &trans &linear_polar &fillet_chamfr &trans &trans &trans &tog PDES                                                    &trans &trans &trans &trans &trans &trans &trans
         &trans &mirror_mtrans &trans &revolve_groov &pad_pocket &sketch_in_out &pdes_to_skch                                  &trans &trans &trans &trans &trans &trans &trans
         &trans &trans &trans &trans &trans &trans &trans       &trans &trans    &trans &trans &trans &trans &trans &trans &trans &trans &trans
-        &trans &trans &trans &trans &trans &varset_td                 &trans &trans                     &trans &trans &trans &trans &trans &trans
+        &trans &trans &trans &trans &trans &varset_td_pdes                 &trans &trans                     &trans &trans &trans &trans &trans &trans
         &trans &trans &trans &trans &trans        &trans &trans &trans       &trans &trans &trans        &trans &trans &trans &trans &trans
       >;
     };
@@ -139,7 +139,7 @@
       // ║    &trans    ║ &trim_point  ║ &circle_arc  ║&rectang_slot ║&line_polyline║&prject_constr║    &trans    ║   ║    &trans    ║    &trans    ║║    &trans     ║    &trans    ║        ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
       // ║              ║              ║              ║              ║              ║              ║              ║   ║              ║              ║║               ║              ║        ║              ║              ║              ║              ║              ║              ║              ║
       // ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╝   ╚══════════════╬══════════════╣╠═══════════════╬══════════════╝        ╚══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣
-      // ║    &trans    ║    &kp R     ║    &kp A     ║    &kp L     ║    &kp M     ║  &varset_td  ║                                 ║    &trans    ║║    &trans     ║                                      ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
+      // ║    &trans    ║    &kp R     ║    &kp A     ║    &kp L     ║    &kp M     ║  &varset_td_skch  ║                                 ║    &trans    ║║    &trans     ║                                      ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
       // ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╝ ╔════════════════╦══════════════╬══════════════╣╠═══════════════╬══════════════╦═══════════╗           ╚══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣
       // ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║                ║     &trans     ║    &trans    ║&lt CONSTRAINT║║    &trans     ║    &trans    ║  &trans   ║                          ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
       // ╚══════════════╩══════════════╩══════════════╩══════════════╩══════════════╝                ╚════════════════╩══════════════╩══════════════╝╚═══════════════╩══════════════╩═══════════╝                          ╚══════════════╩══════════════╩══════════════╩══════════════╩══════════════╝
@@ -147,7 +147,7 @@
         &trans &trans &trans &trans &trans &trans &skch_to_pdes                                                    &trans &trans &trans &trans &trans &trans &trans
         &trans &bspl_comb_poly &bspl_deg_up_dn &bspl_ins_mult &bspl_crt_join &trans &tog SKCH                                                        &trans &trans &trans &trans &trans &trans &trans
         &trans &trim_point &circle_arc &rectang_slot &line_polyline &prject_constr &trans       &trans &trans    &trans &trans &trans &trans &trans &trans &trans &trans &trans
-        &trans &kp R  &kp A  &kp L  &kp M &varset_td                 &trans &trans                     &trans &trans &trans &trans &trans &trans
+        &trans &kp R  &kp A  &kp L  &kp M &varset_td_skch                 &trans &trans                     &trans &trans &trans &trans &trans &trans
         &trans &trans &trans &trans &trans                             &trans &trans &lt CONSTRAINTS ESC  &trans &trans &trans                        &trans &trans &trans &trans &trans
       >;
     };
