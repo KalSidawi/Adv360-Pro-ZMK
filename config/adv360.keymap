@@ -42,7 +42,7 @@
       // ╔══════════════╦══════════════╦══════════════╦══════════════╦══════════════╦══════════════╦══════════════╗                                                                          ╔══════════════╦══════════════╦══════════════╦══════════════╦══════════════╦══════════════╦══════════════╗
       // ║  &kp GRAVE   ║    &kp N1    ║    &kp N2    ║    &kp N3    ║    &kp N4    ║    &kp N5    ║  &tog PDES   ║                                                                          ║   &mo MOD    ║    &kp N6    ║    &kp N7    ║    &kp N8    ║    &kp N9    ║    &kp N0    ║  &kp MINUS   ║
       // ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣                                                                          ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣
-      // ║  &eq_varset_ins   ║    &kp Q     ║    &kp W     ║    &kp E     ║    &kp R     ║    &kp T     ║  &tog SKCH   ║                                                                          ║  &kp INSERT  ║    &kp Y     ║    &kp U     ║    &kp I     ║    &kp O     ║    &kp P     ║   &kp BSLH   ║
+      // ║  &kp EQUAL   ║    &kp Q     ║    &kp W     ║    &kp E     ║    &kp R     ║    &kp T     ║  &tog SKCH   ║                                                                          ║  &kp INSERT  ║    &kp Y     ║    &kp U     ║    &kp I     ║    &kp O     ║    &kp P     ║   &kp BSLH   ║
       // ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣   ╔══════════════╦══════════════╗╔═══════════════╦══════════════╗        ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣
       // ║   &kp TAB    ║    &kp A     ║    &kp S     ║    &kp D     ║    &kp F     ║  &lt SYM G   ║   &kp LGUI   ║   ║  &kp LSHFT   ║  &kp LCTRL   ║║   &kp RCTRL   ║  &kp RSHFT   ║        ║ &kp_numlock  ║  &lt SYM H   ║    &kp J     ║    &kp K     ║    &kp L     ║   &kp SEMI   ║   &kp SQT    ║
       // ║              ║              ║              ║              ║              ║              ║              ║   ║              ║              ║║               ║              ║        ║              ║              ║              ║              ║              ║              ║              ║
@@ -53,7 +53,7 @@
       // ╚══════════════╩══════════════╩══════════════╩══════════════╩══════════════╝                ╚════════════════╩══════════════╩══════════════╝╚═══════════════╩══════════════╩═══════════╝                          ╚══════════════╩══════════════╩══════════════╩══════════════╩══════════════╝
             bindings = <
         &kp GRAVE &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog PDES                                                      &mo MOD    &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS
-        &eq_varset_ins &kp Q     &kp W    &kp E    &kp R      &kp T  &tog SKCH                                                      &kp INSERT &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
+        &kp EQUAL &kp Q     &kp W    &kp E    &kp R      &kp T  &tog SKCH                                                      &kp INSERT &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
         &kp TAB   &kp A     &kp S    &kp D    &kp F  &lt SYM G  &kp LGUI        &kp LSHFT    &kp LCTRL  &kp RCTRL &kp RSHFT   &kp_numlock &lt SYM H &kp J  &kp K     &kp L    &kp SEMI &kp SQT
         &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                               &kp LALT  &kp RALT                        &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
         &mo FN    &kp HOME  &kp CAPS &kp LEFT &kp RIGHT                &kp DELETE  &kp ENTER &kp ESC    &kp ESC   &kp SPACE  &kp BSPC         &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo FN
@@ -63,7 +63,7 @@
     PartDesign {
       display-name = "PartDesign";
       // ╔══════════════╦══════════════╦══════════════╦══════════════╦══════════════╦══════════════╦══════════════╗                                                                          ╔══════════════╦══════════════╦══════════════╦══════════════╦══════════════╦══════════════╦══════════════╗
-      // ║    &trans    ║&linear_polar ║&fillet_chamfr║    &trans    ║    &trans    ║    &trans    ║  &tog PDES   ║                                                                          ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║  &varset_td_pdes  ║    &trans    ║
+      // ║    &trans    ║&linear_polar ║&fillet_chamfr║    &trans    ║    &trans    ║    &trans    ║  &tog PDES   ║                                                                          ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║  &varset_l1_ins_create  ║    &trans    ║
       // ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣                                                                          ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣
       // ║    &trans    ║&mirror_mtrans║    &trans    ║&revolve_groov║ &pad_pocket  ║&sketch_in_out║&pdes_to_skch ║                                                                          ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
       // ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣   ╔══════════════╦══════════════╗╔═══════════════╦══════════════╗        ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣
@@ -78,7 +78,7 @@
         &trans &linear_polar &fillet_chamfr &trans &trans &trans &tog PDES                                                    &trans &trans &trans &trans &trans &trans &trans
         &trans &mirror_mtrans &trans &revolve_groov &pad_pocket &sketch_in_out &pdes_to_skch                                  &trans &trans &trans &trans &trans &trans &trans
         &trans &trans &trans &trans &trans &trans &trans       &trans &trans    &trans &trans &trans &trans &trans &trans &trans &trans &trans
-        &trans &trans &trans &trans &trans &varset_td_pdes                 &trans &trans                     &trans &trans &trans &trans &trans &trans
+        &trans &trans &trans &trans &trans &varset_l1_ins_create                 &trans &trans                     &trans &trans &trans &trans &trans &trans
         &trans &trans &trans &trans &trans        &trans &trans &trans       &trans &trans &trans        &trans &trans &trans &trans &trans
       >;
     };
@@ -139,7 +139,7 @@
       // ║    &trans    ║ &trim_point  ║ &circle_arc  ║&rectang_slot ║&line_polyline║&prject_constr║    &trans    ║   ║    &trans    ║    &trans    ║║    &trans     ║    &trans    ║        ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
       // ║              ║              ║              ║              ║              ║              ║              ║   ║              ║              ║║               ║              ║        ║              ║              ║              ║              ║              ║              ║              ║
       // ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╝   ╚══════════════╬══════════════╣╠═══════════════╬══════════════╝        ╚══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣
-      // ║    &trans    ║    &kp R     ║    &kp A     ║    &kp L     ║    &kp M     ║  &varset_td_skch  ║                                 ║    &trans    ║║    &trans     ║                                      ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
+      // ║    &trans    ║    &kp R     ║    &kp A     ║    &kp L     ║    &kp M     ║  &varset_l4_ins_create  ║                                 ║    &trans    ║║    &trans     ║                                      ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
       // ╠══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╝ ╔════════════════╦══════════════╬══════════════╣╠═══════════════╬══════════════╦═══════════╗           ╚══════════════╬══════════════╬══════════════╬══════════════╬══════════════╬══════════════╣
       // ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║                ║     &trans     ║    &trans    ║&lt CONSTRAINT║║    &trans     ║    &trans    ║  &trans   ║                          ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║    &trans    ║
       // ╚══════════════╩══════════════╩══════════════╩══════════════╩══════════════╝                ╚════════════════╩══════════════╩══════════════╝╚═══════════════╩══════════════╩═══════════╝                          ╚══════════════╩══════════════╩══════════════╩══════════════╩══════════════╝
@@ -147,7 +147,7 @@
         &trans &trans &trans &trans &trans &trans &skch_to_pdes                                                    &trans &trans &trans &trans &trans &trans &trans
         &trans &bspl_comb_poly &bspl_deg_up_dn &bspl_ins_mult &bspl_crt_join &trans &tog SKCH                                                        &trans &trans &trans &trans &trans &trans &trans
         &trans &trim_point &circle_arc &rectang_slot &line_polyline &prject_constr &trans       &trans &trans    &trans &trans &trans &trans &trans &trans &trans &trans &trans
-        &trans &kp R  &kp A  &kp L  &kp M &varset_td_skch                 &trans &trans                     &trans &trans &trans &trans &trans &trans
+        &trans &kp R  &kp A  &kp L  &kp M &varset_l4_ins_create                 &trans &trans                     &trans &trans &trans &trans &trans &trans
         &trans &trans &trans &trans &trans                             &trans &trans &lt CONSTRAINTS ESC  &trans &trans &trans                        &trans &trans &trans &trans &trans
       >;
     };
